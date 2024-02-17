@@ -1,16 +1,14 @@
+import Part1 from "./Part1";
+import Part2 from "./Part2";
+import Part3 from "./Part3";
+
 const Content= (props)=>{
     console.log(props);
     return(
         <div>
-            <p>
-            {props.part1} {props.exercises1}   
-            </p>
-            <p>
-            {props.part2} {props.exercises2}
-            </p>
-            <p>
-            {props.part3} {props.exercises3}
-            </p>
+            <Part1 {...props} />
+            <Part2 {...props} />
+            <Part3 {...props} />
       </div>
     )
 }
